@@ -1,42 +1,75 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>EcoReporta</title>
+    <link rel="stylesheet" href="{% static 'paginaprincipal/estilos.css' %}">
+    <img src="{% static 'paginaprincipal/img/SanFelipeGuanajuato.jpg' % }" alt ="SanFelipeGuanajuato">
+
 
 </head>
 <body>
 
 <header>
-    <h1>EcoReporta</h1>
-    <h1>San Felipe</h1>
-    <h2>Reporta problemas facil y rapido desde tu hogar</h2>
+    <h1 class ="Bienvenida">EcoReporta</h1>
+    <h1 class ="Municipio">San Felipe</h1>
+    <h2 class ="Reporta">Reporta problemas facil y rapido desde tu hogar</h2>
 
 <nav>
     <a href="#">Inicio</a>
     <a href="#">Reportar problema</a>
     <a href="#">Ver Mapa</a>
     <a href="#">Mis reportes</a>
-</nav>    
+</nav>
+</header>    
 
 <main>
     <section>
         <h2>¿Que es EcoReporta?</h2>
-        <h3>EcoReporta es una aplicacion web en donde los habitantes de</h3>
-        <h3>San Felipe pueden reportar problemas en su coloia desde su</h3>
-        <h3>celular rapido y facil, consiste en tomar o subir una foto del</h3>
-        <h3>problema con su ubicacion GPS y de esta manera aparece en un</h3>
-        <h3>mapa que todos pueden ver y el ayuntamiento puede darle seguimiento</h3>
-        <h3>a estos reportes y marcarlos como "Pendiente"/"En atencion"/"Resuelto",</h3>
-        <h3>los habitantes tambien pueden consultar el estado de sus repprtes.</h3>
-        <h3>EcoReporta es una solucion que beneficia al municipio de San Felipe</h3>
+        <h3>EcoReporta es una aplicacion web en donde los habitantes de San Felipe pueden reportar problemas en su coloia desde su</h3>
+        <h3>celular rapido y facil, consiste en tomar o subir una foto del problema con su ubicacion GPS y de esta manera aparece en un</h3>
+        <h3>mapa que todos pueden ver y el ayuntamiento puede darle seguimiento a estos reportes y marcarlos como "Pendiente"/"En atencion"/"Resuelto",</h3>
+        <h3>los habitantes tambien pueden consultar el estado de sus repprtes.EcoReporta es una solucion que beneficia al municipio de San Felipe</h3>
         <h3>y ayuda a disminuir problemas que afectan al municipio.</h3>
     </section>
 
     <section>
         <h2>¿Como funciona EcoReporta?</h2>
         <ol>
-            
+            <li>Reporta:</b>Toma o sube una foto del problema. </li>
+            <li>Ubica:</b>Marca en el mapa donde esta el problema con tu ubicacion GPS.</li>
+            <li>Sigue tu reporte:</b>El trabajador de Ayuntamiento lo ve y cambia su estado.</li>
+            <li>Consulta el mapa:</b>Todos pueden ver los reportes de la comunidad y evitar la zona.</li>
         </ol>
+    </section>
+
+    <section>
+        <h2>¿Qué puedes reportar?</h2>
+        <ul>
+            <li>Baches</li>
+            <li>Fugas de agua</li>
+            <li>Basura en calles</li>
+            <li>Perros callejeros</li>
+            <li>Calles sin pavimentar</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>¿Por qué usar EcoReporta?</h2>
+    <ul>
+        <li>100% gratis y rápido desde tu casa</li>
+        <li>Tu reporte llega directo al ayuntamiento</li>
+        <li>Ayudas a que San Felipe se vea más bonito</li>
+        <li>Ves en tiempo real si ya lo arreglaron</li>
+    </ul>
+    </section>
+</main>
+
+
+</body>
+</html>
+
+
     
 
 
