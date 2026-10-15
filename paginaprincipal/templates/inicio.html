@@ -1,285 +1,72 @@
-
 {% load static %}
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>EcoReporta | San Felipe</title>
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-            rel="stylesheet">
-
-        <link rel="stylesheet"
-            href="{% static 'paginaprincipal/estilos.css' %}">
-    </head>
-
-    <body>
-
-        <!-- ENCABEZADO PRINCIPAL -->
-        <header class="hero">
-    
-            <div class="hero-contenido">
-
-                <a href="#" class="logo">
-                    <span class="logo-icono">🌿</span>
-                    <span>EcoReporta</span>
-                </a>
-
-                <div class="hero-texto">
-                    <span class="etiqueta">TU MUNICIPIO, TU VOZ</span>
-
-                    <h1>Hagamos de San Felipe<br>
-                        un lugar mejor</h1>
-
-                    <p>
-                        Reporta problemas de tu comunidad de forma fácil,
-                        rápida y desde cualquier lugar.
-                    </p>
-
-                    <a href="#reportar" class="boton-principal">
-                        Comienza a reportar
-                        <span aria-hidden="true">→</span>
-                    </a>
-                </div>
-
-                <div class="hero-municipio">
-                    <span class="punto-verde"></span>
-                    San Felipe, Guanajuato
-                </div>
-
-            </div>
-
-        </header>
+<html>
+<head>
+    <title>EcoReporta</title>
+    <link rel="stylesheet" href="{% static 'paginaprincipal/estilos.css' %}?v=2">
+    <link rel="stylesheet" href="{% static 'paginaprincipal/estilos.css' %}">
 
 
-        <!-- BARRA DE NAVEGACIÓN -->
-        <nav class="navegacion" aria-label="Navegación principal">
-            <img
-                class="hero-imagen"
-                src="{% static 'paginaprincipal/img/SanFelipeGuanajuato.jpg' %}"
-                alt="Vista de San Felipe, Guanajuato"
-            >
-            <a href="#" class="nav-logo">EcoReporta</a>
+</head>
+<body>
 
-            <div class="nav-enlaces">
-                <a href="#" class="activo">Inicio</a>
-                <a href="#reportar">Reportar problema</a>
-                <a href="#funcionamiento">Cómo funciona</a>
-                <a href="#beneficios">Beneficios</a>
-            </div>
+<header>
+    <h1 class ="Bienvenida">EcoReporta</h1>
+    <h1 class ="Municipio">San Felipe</h1>
+    <h2 class ="Reporta">Reporta problemas facil y rapido desde tu hogar</h2>
 
-        </nav>
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Reportar problema</a>
+    <a href="#">Ver Mapa</a>
+    <a href="#">Mis reportes</a>
+</nav>
+</header>    
 
+<main>
+    <section>
+        <h2>¿Que es EcoReporta?</h2>
+        <p>EcoReporta es una aplicacion web en donde los habitantes de San Felipe pueden reportar problemas en su coloia desde su celular rapido y facil, consiste en tomar o subir una foto del problema con su ubicacion GPS y de esta manera aparece en un mapa que todos pueden ver y el ayuntamiento puede darle seguimiento a estos reportes y marcarlos como "Pendiente"/"En atencion"/"Resuelto", los habitantes tambien pueden consultar el estado de sus repprtes.EcoReporta es una solucion que beneficia al municipio de San Felipe y ayuda a disminuir problemas que afectan al municipio.</p>
+    </section>
 
-        <main class="contenedor">
+    <section>
+        <h2>¿Como funciona EcoReporta?</h2>
+        <ol>
+            <li>Reporta:</b> Toma o sube una foto del problema. </li>
+            <li>Ubica:</b> Marca en el mapa donde esta el problema con tu ubicacion GPS.</li>
+            <li>Sigue tu reporte:</b> El trabajador de Ayuntamiento lo ve y cambia su estado.</li>
+            <li>Consulta el mapa:</b> Todos pueden ver los reportes de la comunidad y evitar la zona.</li>
+        </ol>
+    </section>
 
-            <!-- INTRODUCCIÓN -->
-            <section class="introduccion" id="reportar">
+    <section>
+        <h2>¿Qué puedes reportar?</h2>
+        <ul>
+            <li>Baches</li>
+            <li>Fugas de agua</li>
+            <li>Basura en calles</li>
+            <li>Perros callejeros</li>
+            <li>Calles sin pavimentar</li>
+        </ul>
+    </section>
 
-                <div class="introduccion-texto">
-                    <span class="subtitulo">PARTICIPA EN TU COMUNIDAD</span>
-
-                    <h2>Tu reporte puede hacer la diferencia</h2>
-
-                    <p>
-                        EcoReporta es una plataforma web que permite a los
-                        habitantes de San Felipe informar sobre problemas
-                        de su colonia. Puedes compartir una fotografía,
-                        indicar la ubicación del problema y consultar el
-                        seguimiento de los reportes.
-                    </p>
-
-                    <p>
-                        Así ayudamos a identificar necesidades, mejorar
-                        los espacios públicos y mantener informada a
-                        nuestra comunidad.
-                    </p>
-                </div>
-
-                <div class="introduccion-tarjeta">
-                    <div class="icono-grande">📍</div>
-                    <h3>Tu comunidad importa</h3>
-                    <p>
-                        Identifica los problemas de tu entorno y ayuda
-                        a que sean más visibles.
-                    </p>
-
-                    <div class="tarjeta-etiqueta">
-                        <span class="punto-verde"></span>
-                        Unidos por San Felipe
-                    </div>
-                </div>
-
-            </section>
+    <section>
+        <h2>¿Por qué usar EcoReporta?</h2>
+    <ul>
+        <li>100% gratis y rápido desde tu casa</li>
+        <li>Tu reporte llega directo al ayuntamiento</li>
+        <li>Ayudas a que San Felipe se vea más bonito</li>
+        <li>Ves en tiempo real si ya lo arreglaron</li>
+    </ul>
+    </section>
+</main>
 
 
-            <!-- CÓMO FUNCIONA -->
-            <section class="seccion" id="funcionamiento">
-
-                <div class="encabezado-seccion">
-                    <span class="subtitulo">SENCILLO Y RÁPIDO</span>
-                    <h2>¿Cómo funciona EcoReporta.?</h2>
-                    <p>
-                        Cuatro pasos para ayudar a mejorar tu municipio.
-                    </p>
-                </div>
-
-                <div class="pasos-grid">
-
-                    <article class="tarjeta paso">
-                        <div class="paso-numero">01</div>
-                        <div class="paso-icono">📸</div>
-                        <h3>Reporta</h3>
-                        <p>
-                            Toma una fotografía o selecciona una imagen
-                            del problema que encontraste.
-                        </p>
-                    </article>
-
-                    <article class="tarjeta paso">
-                        <div class="paso-numero">02</div>
-                        <div class="paso-icono">📍</div>
-                        <h3>Ubica</h3>
-                        <p>
-                            Indica en el mapa dónde se encuentra el
-                            problema para facilitar su localización.
-                        </p>
-                    </article>
-
-                    <article class="tarjeta paso">
-                        <div class="paso-numero">03</div>
-                        <div class="paso-icono">🔎</div>
-                        <h3>Da seguimiento</h3>
-                        <p>
-                            Consulta el estado de tu reporte y revisa
-                            sus actualizaciones cuando estén disponibles.
-                        </p>
-                    </article>
-
-                    <article class="tarjeta paso">
-                        <div class="paso-numero">04</div>
-                        <div class="paso-icono">🗺️</div>
-                        <h3>Consulta el mapa</h3>
-                        <p>
-                            Visualiza los reportes de la comunidad y
-                            conoce los problemas identificados.
-                        </p>
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- TIPOS DE REPORTES -->
-            <section class="seccion reportes-seccion">
-
-                <div class="encabezado-seccion">
-                    <span class="subtitulo">CUIDEMOS NUESTRO ENTORNO</span>
-                    <h2>¿Qué puedes reportar?</h2>
-                    <p>
-                        Ayúdanos a identificar situaciones que necesitan
-                        atención en nuestro municipio.
-                    </p>
-                </div>
-
-                <div class="reportes-grid">
-
-                    <article class="tarjeta categoria">
-                        <div class="categoria-icono">🛣️</div>
-                        <h3>Baches</h3>
-                        <p>Calles dañadas que dificultan el tránsito.</p>
-                    </article>
-
-                    <article class="tarjeta categoria">
-                        <div class="categoria-icono">💧</div>
-                        <h3>Fugas de agua</h3>
-                        <p>Fugas que necesitan ser identificadas.</p>
-                    </article>
-
-                    <article class="tarjeta categoria">
-                        <div class="categoria-icono">🗑️</div>
-                        <h3>Basura en calles</h3>
-                        <p>Acumulación de residuos en espacios públicos.</p>
-                    </article>
-
-                    <article class="tarjeta categoria">
-                        <div class="categoria-icono">🐕</div>
-                        <h3>Perros callejeros</h3>
-                        <p>Situaciones que requieren atención comunitaria.</p>
-                    </article>
-
-                    <article class="tarjeta categoria">
-                        <div class="categoria-icono">🚧</div>
-                        <h3>Calles sin pavimentar</h3>
-                        <p>Vialidades que necesitan mejoras.</p>
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- BENEFICIOS -->
-            <section class="beneficios" id="beneficios">
-
-                <div class="beneficios-texto">
-                    <span class="subtitulo">UN MUNICIPIO MEJOR PARA TODOS</span>
-                    <h2>Pequeñas acciones, grandes cambios</h2>
-                    <p>
-                        Tu participación ayuda a que los problemas
-                        de la comunidad sean más visibles y facilita
-                        su seguimiento.
-                    </p>
-                </div>
-
-                <div class="beneficios-lista">
-
-                    <div class="beneficio">
-                        <span class="beneficio-check">✓</span>
-                        <div>
-                            <h3>Fácil y accesible</h3>
-                            <p>Consulta la plataforma desde tu celular o computadora.</p>
-                        </div>
-                    </div>
-
-                    <div class="beneficio">
-                        <span class="beneficio-check">✓</span>
-                        <div>
-                            <h3>Información organizada</h3>
-                            <p>Identifica los problemas y sus ubicaciones.</p>
-                        </div>
-                    </div>
-
-                    <div class="beneficio">
-                        <span class="beneficio-check">✓</span>
-                        <div>
-                            <h3>Seguimiento de reportes</h3>
-                            <p>Consulta los estados disponibles de cada reporte.</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-        </main>
-
-
-        <!-- PIE DE PÁGINA -->
-        <footer class="footer">
-            <a href="#" class="footer-logo">🌿 EcoReporta</a>
-
-            <p>
-                Una comunidad participativa construye un mejor San Felipe.
-            </p>
-
-            <span>San Felipe, Guanajuato · EcoReporta</span>
-        </footer>
-
-    </body>
+</body>
 </html>
+
+
+    
+
+
+
