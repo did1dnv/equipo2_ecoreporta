@@ -146,11 +146,17 @@ img {
         scroll-behavior: auto !important;
     }
 }
+.contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 30px auto;
+}
 .icono-titulo {
-    width: 35px;          /* tamaño */
-    height: 35px;
+    width: 250px;          /* tamaño */
+    height: 250px;
     object-fit: cover;    /* Para que la imagen no se deforme */
-    border-radius: 5px;   /* para redondear las esquinas */
-    vertical-align: middle;
-    margin-left: 8px;
+    border-radius: 12px;   /* para redondear las esquinas */
+    box-shadow: 0 4px 8px rgba(o,o,o,o.1);
 }
