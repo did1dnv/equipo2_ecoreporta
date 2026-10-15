@@ -1,6 +1,6 @@
 #Python
 __pycache_/
-*-pyc
+*.pyc
 
 #Django
 db.sqlite3
