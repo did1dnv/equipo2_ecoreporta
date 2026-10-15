@@ -146,3 +146,11 @@ img {
         scroll-behavior: auto !important;
     }
 }
+.icono-titulo {
+    width: 35px;          /* tamaño */
+    height: 35px;
+    object-fit: cover;    /* Para que la imagen no se deforme */
+    border-radius: 5px;   /* para redondear las esquinas */
+    vertical-align: middle;
+    margin-left: 8px;
+}
